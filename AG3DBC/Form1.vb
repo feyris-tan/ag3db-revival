@@ -1051,44 +1051,6 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        threads.AddParameter(ListSets)
-        threads.Start(AG3DBCThreadType.GetSets)
-    End Sub
-
-    Private Sub ListSets_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListSets.SelectedIndexChanged
-
-        If NotNothing(Selected(sender, False)) Then
-
-            Dim nfo As SetNfo = Selected(sender).Tag
-
-            ListSetObjs.Items.Clear()
-
-            For Each obj As String In nfo.Objects
-                ListSetObjs.Items.Add(obj)
-            Next
-
-        End If
-
-    End Sub
-
-    'Private Sub ListSetObjs_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListSetObjs.SelectedIndexChanged
-
-    '    If NotNothing(Selected(sender, False)) Then
-
-    '        Dim nfo As CharacterNfo = Selected(sender, False).Tag
-
-    '        If nfo.NeedPreviews Then
-    '            threads.AddParameter(nfo)
-    '            threads.Start(AG3DBCThreadType.GetPreviews)
-    '        Else
-    '            nfo.DoDBPreviews()
-    '        End If
-
-    '    End If
-
-    'End Sub
-
     Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
 
         Dim list As ListView = GetSelectedList(Tab)

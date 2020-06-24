@@ -55,11 +55,11 @@ Partial Class Form1
         Dim ListViewItem33 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("<?php")
         Dim ListViewItem34 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("asdsad")
         Dim ListViewItem35 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("<?php")
-        Dim ListViewItem36 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
+        Dim ListViewItem36 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
         Dim ListViewItem37 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
         Dim ListViewItem38 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
         Dim ListViewItem39 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem40 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
+        Dim ListViewItem40 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
         Dim ListViewItem41 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
         Dim ListViewItem42 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
         Dim ListViewItem43 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
@@ -68,65 +68,28 @@ Partial Class Form1
         Dim ListViewItem46 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
         Dim ListViewItem47 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
         Dim ListViewItem48 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem49 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem50 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
+        Dim ListViewItem49 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
+        Dim ListViewItem50 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
         Dim ListViewItem51 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
         Dim ListViewItem52 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
         Dim ListViewItem53 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
         Dim ListViewItem54 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
         Dim ListViewItem55 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem56 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem57 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem58 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem59 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem60 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem61 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem62 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem63 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem64 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem65 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem66 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem67 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem68 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem69 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem70 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem71 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddsdsa")
-        Dim ListViewItem72 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem73 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
-        Dim ListViewItem74 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem75 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem76 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem77 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
-        Dim ListViewItem78 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem79 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem80 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem81 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem82 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem83 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem84 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem85 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem86 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem87 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
-        Dim ListViewItem88 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem89 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem90 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem91 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem92 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem93 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem94 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
-        Dim ListViewItem95 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem96 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem97 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
-        Dim ListViewItem98 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
-        Dim ListViewItem99 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
-        Dim ListViewItem100 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
-        Dim ListViewItem101 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
-        Dim ListViewItem102 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
-        Dim ListViewItem103 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
-        Dim ListViewItem104 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
-        Dim ListViewItem105 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
-        Dim ListViewItem106 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
-        Dim ListViewItem107 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
+        Dim ListViewItem56 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
+        Dim ListViewItem57 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
+        Dim ListViewItem58 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
+        Dim ListViewItem59 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
+        Dim ListViewItem60 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
+        Dim ListViewItem61 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
+        Dim ListViewItem62 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
+        Dim ListViewItem63 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
+        Dim ListViewItem64 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
+        Dim ListViewItem65 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
+        Dim ListViewItem66 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
+        Dim ListViewItem67 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
+        Dim ListViewItem68 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
+        Dim ListViewItem69 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
+        Dim ListViewItem70 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("abc")
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Tab = New System.Windows.Forms.TabControl()
         Me.TabNews = New System.Windows.Forms.TabPage()
@@ -148,14 +111,6 @@ Partial Class Form1
         Me.LblCharacters = New System.Windows.Forms.Label()
         Me.CmdRemovePreview = New System.Windows.Forms.Button()
         Me.CmdAddPreviews = New System.Windows.Forms.Button()
-        Me.TabSets = New System.Windows.Forms.TabPage()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.ListSetObjs = New System.Windows.Forms.ListView()
-        Me.ColSetObjName = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ListSets = New System.Windows.Forms.ListView()
-        Me.ColSetsName = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TabDBChars = New System.Windows.Forms.TabPage()
         Me.CmdGetPreview = New System.Windows.Forms.Button()
         Me.CmdRate = New System.Windows.Forms.Button()
@@ -287,7 +242,6 @@ Partial Class Form1
         Me.Tab.SuspendLayout()
         Me.TabNews.SuspendLayout()
         Me.TabLocals.SuspendLayout()
-        Me.TabSets.SuspendLayout()
         Me.TabDBChars.SuspendLayout()
         Me.TabStats.SuspendLayout()
         Me.TabStatistics.SuspendLayout()
@@ -314,7 +268,6 @@ Partial Class Form1
         '
         Me.Tab.Controls.Add(Me.TabNews)
         Me.Tab.Controls.Add(Me.TabLocals)
-        Me.Tab.Controls.Add(Me.TabSets)
         Me.Tab.Controls.Add(Me.TabDBChars)
         Me.Tab.Controls.Add(Me.TabStats)
         Me.Tab.Controls.Add(Me.TabHelp)
@@ -494,84 +447,6 @@ Partial Class Form1
         Me.CmdAddPreviews.Text = "Add Previews"
         Me.CmdAddPreviews.UseVisualStyleBackColor = True
         '
-        'TabSets
-        '
-        Me.TabSets.Controls.Add(Me.Button5)
-        Me.TabSets.Controls.Add(Me.Button4)
-        Me.TabSets.Controls.Add(Me.Button2)
-        Me.TabSets.Controls.Add(Me.ListSetObjs)
-        Me.TabSets.Controls.Add(Me.ListSets)
-        Me.TabSets.Location = New System.Drawing.Point(4, 22)
-        Me.TabSets.Name = "TabSets"
-        Me.TabSets.Size = New System.Drawing.Size(543, 541)
-        Me.TabSets.TabIndex = 8
-        Me.TabSets.Text = "Sets"
-        Me.TabSets.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(105, 508)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(102, 25)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "Delete Set"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(3, 508)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(102, 25)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "New Set"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(213, 508)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(327, 25)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'ListSetObjs
-        '
-        Me.ListSetObjs.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColSetObjName})
-        Me.ListSetObjs.FullRowSelect = True
-        Me.ListSetObjs.HideSelection = False
-        Me.ListSetObjs.Location = New System.Drawing.Point(213, 3)
-        Me.ListSetObjs.Name = "ListSetObjs"
-        Me.ListSetObjs.Size = New System.Drawing.Size(327, 499)
-        Me.ListSetObjs.TabIndex = 1
-        Me.ListSetObjs.UseCompatibleStateImageBehavior = False
-        Me.ListSetObjs.View = System.Windows.Forms.View.Details
-        '
-        'ColSetObjName
-        '
-        Me.ColSetObjName.Tag = "String"
-        Me.ColSetObjName.Text = "Object Name"
-        Me.ColSetObjName.Width = 300
-        '
-        'ListSets
-        '
-        Me.ListSets.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColSetsName})
-        Me.ListSets.FullRowSelect = True
-        Me.ListSets.HideSelection = False
-        Me.ListSets.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem36, ListViewItem37, ListViewItem38, ListViewItem39, ListViewItem40, ListViewItem41, ListViewItem42, ListViewItem43, ListViewItem44, ListViewItem45, ListViewItem46, ListViewItem47, ListViewItem48, ListViewItem49, ListViewItem50, ListViewItem51, ListViewItem52, ListViewItem53, ListViewItem54, ListViewItem55, ListViewItem56, ListViewItem57, ListViewItem58, ListViewItem59, ListViewItem60, ListViewItem61, ListViewItem62, ListViewItem63, ListViewItem64, ListViewItem65, ListViewItem66, ListViewItem67, ListViewItem68, ListViewItem69, ListViewItem70, ListViewItem71, ListViewItem72})
-        Me.ListSets.Location = New System.Drawing.Point(3, 3)
-        Me.ListSets.Name = "ListSets"
-        Me.ListSets.Size = New System.Drawing.Size(204, 499)
-        Me.ListSets.TabIndex = 0
-        Me.ListSets.UseCompatibleStateImageBehavior = False
-        Me.ListSets.View = System.Windows.Forms.View.Details
-        '
-        'ColSetsName
-        '
-        Me.ColSetsName.Tag = "String"
-        Me.ColSetsName.Text = "Set Name"
-        Me.ColSetsName.Width = 171
-        '
         'TabDBChars
         '
         Me.TabDBChars.Controls.Add(Me.CmdGetPreview)
@@ -633,7 +508,7 @@ Partial Class Form1
         Me.ListDBChars.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColDBCharsDate, Me.ColDBCharsName, Me.ColDBCharsAuthor, Me.ColDBCharsHits, Me.ColDBCharsRating, Me.ColDBCharsTags, Me.ColDBCharsInCharsList, Me.ColDBCharsHavePreviews, Me.ColDBCharsHasDesc, Me.ColDBCharsRated})
         Me.ListDBChars.FullRowSelect = True
         Me.ListDBChars.HideSelection = False
-        Me.ListDBChars.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem73, ListViewItem74, ListViewItem75, ListViewItem76, ListViewItem77, ListViewItem78, ListViewItem79, ListViewItem80, ListViewItem81, ListViewItem82, ListViewItem83, ListViewItem84, ListViewItem85, ListViewItem86, ListViewItem87, ListViewItem88, ListViewItem89, ListViewItem90, ListViewItem91, ListViewItem92, ListViewItem93, ListViewItem94, ListViewItem95, ListViewItem96, ListViewItem97, ListViewItem98, ListViewItem99, ListViewItem100, ListViewItem101, ListViewItem102, ListViewItem103, ListViewItem104, ListViewItem105, ListViewItem106, ListViewItem107})
+        Me.ListDBChars.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem36, ListViewItem37, ListViewItem38, ListViewItem39, ListViewItem40, ListViewItem41, ListViewItem42, ListViewItem43, ListViewItem44, ListViewItem45, ListViewItem46, ListViewItem47, ListViewItem48, ListViewItem49, ListViewItem50, ListViewItem51, ListViewItem52, ListViewItem53, ListViewItem54, ListViewItem55, ListViewItem56, ListViewItem57, ListViewItem58, ListViewItem59, ListViewItem60, ListViewItem61, ListViewItem62, ListViewItem63, ListViewItem64, ListViewItem65, ListViewItem66, ListViewItem67, ListViewItem68, ListViewItem69, ListViewItem70})
         Me.ListDBChars.Location = New System.Drawing.Point(6, 21)
         Me.ListDBChars.MultiSelect = False
         Me.ListDBChars.Name = "ListDBChars"
@@ -1770,7 +1645,6 @@ Partial Class Form1
         Me.TabNews.PerformLayout()
         Me.TabLocals.ResumeLayout(False)
         Me.TabLocals.PerformLayout()
-        Me.TabSets.ResumeLayout(False)
         Me.TabDBChars.ResumeLayout(False)
         Me.TabDBChars.PerformLayout()
         Me.TabStats.ResumeLayout(False)
@@ -1951,14 +1825,6 @@ Partial Class Form1
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents TabSets As System.Windows.Forms.TabPage
-    Friend WithEvents ListSetObjs As System.Windows.Forms.ListView
-    Friend WithEvents ListSets As System.Windows.Forms.ListView
-    Friend WithEvents ColSetsName As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColSetObjName As System.Windows.Forms.ColumnHeader
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Pages As Global.AG3DBC.ListPages
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents ChkAutoPreviews As System.Windows.Forms.CheckBox
