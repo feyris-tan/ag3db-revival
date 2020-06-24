@@ -10,7 +10,7 @@ namespace libAG3DBCrevival
 
         public void SetDefaults()
         {
-            ServerURL = "http://127.0.0.1:42054/js3db-revival/";
+            ServerURL = "http://127.0.0.1:42054/js3db-revival";
         }
     }
 }
