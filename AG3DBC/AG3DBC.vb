@@ -89,7 +89,13 @@ Module AG3DBC
         ag3Previews = appPath & "\Previews\"
         ag3DBChars = appPath & "\tempChars\"
         ag3dbcToolsPath = appPath & "\Tools\"
+
         ag3dbcLogsPath = appPath & "\Logs\"
+        Dim logDirectoryInfo As DirectoryInfo = New DirectoryInfo(ag3dbcLogsPath)
+        If Not logDirectoryInfo.Exists Then
+            logDirectoryInfo.Create()
+        End If
+
         zip7exe = ag3dbcToolsPath & "7z\7z.exe"
         ag3Decrypt = ag3dbcToolsPath & "AG3Decrypt.exe"
         xmlFile = appPath & "\settings.xml"
@@ -596,7 +602,9 @@ Module AG3DBC
         Status.Items("Mes1").Text = theMes
         Status.Items("Mes1").ToolTipText = theMes
 
-        File.AppendAllText(ag3dbcLogsPath & GetSTDToday() & ".txt", theMes & endl)
+        theMes = theMes & endl
+        Debug.Write(theMes)
+        File.AppendAllText(ag3dbcLogsPath & GetSTDToday() & ".txt", theMes)
 
         If displayMsgbox Then
             MsgBox(message, msg)
