@@ -51,8 +51,6 @@ Public Class AG3DBCThreads
     Private _threadType As AG3DBCThreadType
     Private _invokeObj As Object
 
-
-
     Private Sub DoStart(ByVal func As Object)
 
         If IsNothing(_invokeObj) Then
@@ -868,7 +866,6 @@ Public Class Previews
     Private _filesizes As New Collection
     Private WithEvents _picBox As PictureBox
     Private WithEvents _picFrame As Control
-    Private myRnd As Random
 
     Private Sub OpenPic(ByVal sender As Object, ByVal e As EventArgs) Handles _picBox.DoubleClick, _picFrame.DoubleClick
 
@@ -885,7 +882,6 @@ Public Class Previews
     Public Sub New(ByVal picBox As PictureBox, ByVal picFrame As Control)
         _picBox = picBox
         _picFrame = picFrame
-        Me.myRnd = New Random()
     End Sub
 
     Public Sub Add(ByVal picFile As String, Optional ByVal key As String = "")
