@@ -188,7 +188,7 @@ Public Class Form1
         LoadLocals(ListLocals, LblCharacters)
     End Sub
 
-    Private Sub LblRegister_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs)
+    Private Sub LblRegister_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LblRegister.LinkClicked
         Process.Start(AG3DBC.API.ServerUrl & "register.php")
     End Sub
 
