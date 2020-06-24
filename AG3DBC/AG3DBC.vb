@@ -7,7 +7,7 @@ Imports libAG3DBCrevival
 
 Module AG3DBC
 
-    Public Const AG3DBC_VERSION As String = "1.01.1"
+    Public Const AG3DBC_VERSION As String = "1.01.2"
     Public Const AG3_REGKEY As String = "Software\illusion\JS3"
     Public Const AG3DBC_REGKEY As String = "Software\AG3DBC"
     Public Const AG3DB_EXT As String = ".7z"
@@ -185,6 +185,8 @@ Module AG3DBC
 
             Dim newItem As New ListViewItem()
             Dim nfo As New CharacterNfo(AG3DBType.Character, oFile, list.Tag.Items.Count, list, newItem)
+
+            If Not nfo.DirectoryExists Then Continue For
 
             newItem.Tag = nfo
             newItem.Text = nfo.DateTime
@@ -850,7 +852,7 @@ Module AG3DBC
 
     Public Function AuthenticateUser(ByVal username As String, ByVal password As String) As UserInfo
 
-        Dim web As New WebFormPost(AG3DBC.API.ServerUrl & "\ag3dbc\authenticate.php")
+        Dim web As New WebFormPost(AG3DBC.API.ServerUrl & "ag3dbc/authenticate.php")
 
         web.AddFormElement("version", PwdHash(AG3DBC_VERSION))
         web.AddFormElement("username", username)
@@ -860,7 +862,7 @@ Module AG3DBC
 
         If retVal = "5" Then
             Mes("Your version of AG3DBC is out of date. Please download the most recent version.", AG3DBCMessageType.Err, True)
-            Process.Start(HF_AG3DBC_POST)
+            Process.Start(AG3DBC.API.ServerUrl)
             End
         End If
 

@@ -353,6 +353,12 @@ Public Class CharacterNfo
 
     End Property
 
+    Public ReadOnly Property DirectoryExists() As Boolean
+        Get
+            Dim di As DirectoryInfo = New DirectoryInfo(ag3Chars & _nfo.charName)
+            Return di.Exists
+        End Get
+    End Property
     Public ReadOnly Property DateTime() As String
         Get
             Return _nfo.dateTime

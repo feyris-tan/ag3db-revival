@@ -2,6 +2,7 @@ Imports System.Threading
 Imports System.IO
 Imports System.Xml
 Imports System.Text.RegularExpressions
+Imports libAG3DBCrevival
 Imports Microsoft.Win32
 'Imports codeparser.net
 
@@ -58,13 +59,19 @@ Public Class AG3DBCThreads
         If IsNothing(_invokeObj) Then
 
             Select Case func
-                Case AG3DBCThreadType.GetDBCharsFeed Or _
-                AG3DBCThreadType.GetUserRatingsFeed Or _
-                AG3DBCThreadType.GetUserCharsFeed Or _
-                AG3DBCThreadType.GetUserStatsFeed Or _
-                AG3DBCThreadType.GetTopCharsFeed Or _
-                AG3DBCThreadType.GetTopUsersFeed Or _
-                AG3DBCThreadType.GetSets
+                Case AG3DBCThreadType.GetDBCharsFeed
+                    _invokeObj = _feeds
+                Case AG3DBCThreadType.GetUserRatingsFeed
+                    _invokeObj = _feeds
+                Case AG3DBCThreadType.GetUserCharsFeed
+                    _invokeObj = _feeds
+                Case AG3DBCThreadType.GetUserStatsFeed
+                    _invokeObj = _feeds
+                Case AG3DBCThreadType.GetTopCharsFeed
+                    _invokeObj = _feeds
+                Case AG3DBCThreadType.GetTopUsersFeed
+                    _invokeObj = _feeds
+                Case AG3DBCThreadType.GetSets
                     _invokeObj = _feeds
                 Case AG3DBCThreadType.SearchTags
                     _invokeObj = _search
@@ -72,6 +79,8 @@ Public Class AG3DBCThreads
                     _invokeObj = _upload
                 Case AG3DBCThreadType.UpdateTags
                     _invokeObj = _tags
+                Case Else
+                    Throw New UnknownThreadTypeException(func.ToString())
             End Select
 
         End If
@@ -1054,133 +1063,6 @@ Public Class Previews
     End Property
 
 End Class
-
-'Public Class phpBBCode
-
-'    Private _phpbbCode As String
-'    Private _cssFile As String
-'    Private _noBRTags() As String = {"list"}
-'    Private _tags() As String = {"url", "email", "img", "list", "*", "size", "color", "center", "left", "right", "indent", "strike", "noparse", "spoiler"}
-
-'    Public Function Decode2Html() As String
-
-'        Dim bbCodeConfig As New codeparser.net.ParserConfiguration()
-'        Dim html As String = _phpbbCode
-
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("url", "<a href={1} class='url' target='_blank'>{0}</a>", "<a href={0} class='url' target='_blank'>{0}</a>"))
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("email", "<a href='mailto:{1}' class='email' target='_blank'>{0}</a>", "<a href='mailto:{0}' class='email' target='_blank'>{0}</a>"))
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("img", "<img class='img' src='{0}' />"))
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("list", "<ul class='list'>{0}</ul>"))
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("*", "<li>"))
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("size", "<font class='size' size={1}>{0}</font>"))
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("color", "<font class='color' color={1}>{0}</font>"))
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("center", "<div class='center'>{0}</div>"))
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("left", "<div class='left'>{0}</div>"))
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("right", "<div class='right'>{0}</div>"))
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("indent", "<blockquote class='indent'><div>{0}</div></blockquote>"))
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("strike", "<strike class='strike'>{0}</strike>"))
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("noparse", "{0}", False))
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("i", "<i class='i'>{0}</i>"))
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("b", "<b class='b'>{0}</b>"))
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("u", "<u class='u'>{0}</u>"))
-'        bbCodeConfig.TagConfigurations.Add(New _
-'            TagConfiguration("spoiler", _
-'                "<div class='spoiler'>" & _
-'                "   <div style='display:none'>" & _
-'                "   {0}<br></div><input type='button' class='button' value='Show Spoiler' onclick='changeSpoilerDisplay(this)'></div>"))
-
-'        bbCodeConfig.ThrowExceptionOnInvalidTag = False
-
-'        Try
-
-'            html = html.Replace("<", "&lt;")
-'            html = html.Replace(">", "&gt;")
-'            html = Regex.Replace(html, "(\s)(http:\/\/|ftp:\/\/)([^\s,]+)(\s)", "$1[url]$2$3[/url]$4")
-'            html = Regex.Replace(html, "(\s)([A-z0-9._%-]+@[A-z0-9.-]+\.[A-z]{2,4})(\s)", "$1[email]$2[/email]$3", RegexOptions.Multiline)
-'            html = DoBRs(html)
-'            html = New codeparser.net.Parser(bbCodeConfig).Parse(html)
-
-'            Return ShowHtml(html)
-
-'        Catch ex As Exception
-'            Return "ERROR"
-'        End Try
-
-'    End Function
-
-'    Private Function DoBRs(ByVal bbCode As String) As String
-
-'        Dim newBBCode As String = ""
-'        Dim tag As String
-'        Dim br As Boolean
-
-'        For Each line As String In Split(bbCode, endl)
-
-'            br = True
-
-'            For Each tag In _noBRTags
-
-'                If line.EndsWith("[" & tag & "]") Or line.EndsWith("[/" & tag & "]") Then
-'                    br = False : Exit For
-'                End If
-
-'            Next
-
-'            If br Then
-'                newBBCode += line & "<br />" & endl
-'            Else
-'                newBBCode += line & endl
-'            End If
-
-'        Next
-
-'        Return newBBCode.Substring(0, Len(newBBCode) - Len(endl))
-
-'    End Function
-
-'    Private Function ShowHtml(ByVal html As String) As String
-
-'        Return "<html><head><title>Description</title>" & _
-'               "<script type='text/javascript'>" & endl & File.ReadAllText(ag3dbcToolsPath & "bbcode/javascript.js") & endl & "</script>" & _
-'               "<style>" & endl & File.ReadAllText(ag3dbcToolsPath & "/bbcode/styles.css") & endl & "</style>" & _
-'               "</head><body>" & endl & endl & html & endl & endl & "</body></html>"
-
-'    End Function
-
-'    Public Function ParseLists(ByVal phpBBCode As String) As String
-
-'        If phpBBCode.Contains("[list") Then
-'            phpBBCode = Regex.Replace(phpBBCode, "\[list\=[A-z]\](.*)\[/list\]", "<ol style='list-style-type: lower-alpha'>$1</ol>")
-'            phpBBCode = Regex.Replace(phpBBCode, "\[list\=[0-9]\](.*)\[/list\]", "<ol>$1</ol>")
-'            phpBBCode = Regex.Replace(phpBBCode, "/\[list\](.+?)\[\/list\]/is", "<ul>$1</ul>")
-'            phpBBCode = phpBBCode.Replace("[*]", "<li>")
-'        End If
-
-'        Return phpBBCode
-
-'    End Function
-
-'    Public Sub New(ByVal phpBBcode As String)
-'        _phpbbCode = phpBBcode
-'    End Sub
-
-'End Class
 
 Public Class DescForm
 
