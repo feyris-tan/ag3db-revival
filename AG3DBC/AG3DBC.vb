@@ -3,6 +3,7 @@ Imports System.Xml
 Imports System.Threading
 Imports Microsoft.Win32
 Imports System.Text.RegularExpressions
+Imports libAG3DBCrevival
 
 Module AG3DBC
 
@@ -10,7 +11,6 @@ Module AG3DBC
     Public Const AG3_REGKEY As String = "Software\illusion\JS3"
     Public Const AG3DBC_REGKEY As String = "Software\AG3DBC"
     Public Const AG3DB_EXT As String = ".7z"
-    Public Const SERVER As String = "[[HTTP_SERVER_URL]]"
     Public Const FTP_USER As String = "[[FTP_USER]]"
     Public Const FTP_PWD As String = "[[FTP_PASSWORD]]"
     Public Const FTP_ADDR As String = "[[FTP_URL]]"
@@ -28,6 +28,8 @@ Module AG3DBC
     Public Const HF_AG3DBC_POST As String = "[[HF_POST_URL]]"
     Public Const MAX_COMMENTS_SIZE As Integer = 1000
     Public ReadOnly AG3DB_BIRTHDAY As New Date(2007, 11, 18, 0, 0, 0)
+
+    Public API As libAG3DBCrevival.Ag3DbRevivalApi = New Ag3DbRevivalApi()
 
     Public ag3Reg As RegistryKey
     Public ag3dbcReg As RegistryKey
@@ -848,7 +850,7 @@ Module AG3DBC
 
     Public Function AuthenticateUser(ByVal username As String, ByVal password As String) As UserInfo
 
-        Dim web As New WebFormPost(SERVER & "\ag3dbc\authenticate.php")
+        Dim web As New WebFormPost(AG3DBC.API.ServerUrl & "\ag3dbc\authenticate.php")
 
         web.AddFormElement("version", PwdHash(AG3DBC_VERSION))
         web.AddFormElement("username", username)
@@ -886,7 +888,7 @@ Module AG3DBC
 
     Public Function CharacterExists(ByVal characterName As String) As Boolean
 
-        Dim retVal As String = GetHttpResponseString(SERVER & "checkDB.php?type=characterName&value=" & characterName)
+        Dim retVal As String = GetHttpResponseString(AG3DBC.API.ServerUrl & "checkDB.php?type=characterName&value=" & characterName)
 
         Return retVal <> "0"
 

@@ -86,6 +86,10 @@ Public Class Form1
 
         isLoading = False
 
+        If AG3DBC.API.FirstRun Then
+            Dim warn As String = String.Format("You are running AG3DB-Revival for the first time. I just created revival-settings.xml. Please edit that file and point it to the correct Azusarkus URL. The current URL is now {0} - this is probably not what you want.", AG3DBC.API.ServerUrl)
+            MsgBox(warn, MsgBoxStyle.OkOnly, Nothing)
+        End If
     End Sub
 
     Private Sub LoadControls()
@@ -161,7 +165,7 @@ Public Class Form1
 
                 Dim result As MsgBoxResult = MsgBox("Do you want to include the entire character structure?" & endl & "(choose no if no there are no modded files inside the character's folder)", MsgBoxStyle.Question + MsgBoxStyle.YesNoCancel)
 
-                If result <> MsgBoxResult.Cancel Then
+            If result <> MsgBoxResult.Cancel Then
                     prevs.Pause()
                     threads.AddParameter(nfo.CharacterName)
                     threads.AddParameter(nfo.Tags)
@@ -185,7 +189,7 @@ Public Class Form1
     End Sub
 
     Private Sub LblRegister_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs)
-        Process.Start(SERVER & "register.php")
+        Process.Start(AG3DBC.API.ServerUrl & "register.php")
     End Sub
 
     Private Sub CmdAddPreviews_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CmdAddPreviews.Click
@@ -764,7 +768,7 @@ Public Class Form1
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        Process.Start(SERVER)
+        Process.Start(AG3DBC.API.ServerUrl)
     End Sub
 
     Private Sub ListUserChars_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListUserChars.SelectedIndexChanged, ListUserRatings.SelectedIndexChanged
@@ -1037,7 +1041,7 @@ Public Class Form1
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
 
-        Dim retVal As String = GetHttpResponseString(SERVER & "testConnect.php")
+        Dim retVal As String = GetHttpResponseString(AG3DBC.API.ServerUrl & "testConnect.php")
 
         If retVal = "0" Then
             Mes("You can communicate with the AG3DB webserver.", AG3DBCMessageType.Success, True)

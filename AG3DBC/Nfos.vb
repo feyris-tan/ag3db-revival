@@ -172,7 +172,7 @@ Public Class CharacterNfo
 
     Private Sub DoGetPreviews()
 
-        Dim w As New WebFormPost(SERVER & "\ag3dbc\getPreviews.php")
+        Dim w As New WebFormPost(AG3DBC.API.ServerUrl & "\ag3dbc\getPreviews.php")
 
         Try
 

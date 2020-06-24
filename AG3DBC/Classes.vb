@@ -296,7 +296,7 @@ Public Class Upload
 
     Private Sub FinishUpload(ByVal charName As String, ByVal tags As String, ByVal desc As String, ByVal bytesTotal As Double)
 
-        Dim up As New WebFormPost(SERVER & "upload2.php")
+        Dim up As New WebFormPost(AG3DBC.API.ServerUrl & "upload2.php")
         Dim ok As Boolean = False
 
         up.AddFormElement("name", charName)
@@ -337,7 +337,7 @@ Public Class Upload
 
     Public Function InitUpload(ByVal charName As String, ByVal tags As String) As String
 
-        Dim url As String = SERVER & "startUpload.php?name=" & charName
+        Dim url As String = AG3DBC.API.ServerUrl & "startUpload.php?name=" & charName
         Dim crc As New CRC32
 
         url += "&username=" & GetUsername()
@@ -418,7 +418,7 @@ Public Class Download
         queryString += "&userId=" & nfo.UserId
         queryString += "&type=chars"
 
-        Dim retVal As String = GetHttpResponseString(SERVER & queryString)
+        Dim retVal As String = GetHttpResponseString(AG3DBC.API.ServerUrl & queryString)
 
         item.SubItems(3).Text = Format(nfo.Hits + 1, "###,###,###")
 
@@ -434,7 +434,7 @@ Public Class Details
 
         If CheckDetails(nfo.Description, nfo.Tags) Then
 
-            Dim wb As New WebFormPost(SERVER & "details.php")
+            Dim wb As New WebFormPost(AG3DBC.API.ServerUrl & "details.php")
 
             wb.AddFormElement("username", GetUsername())
             wb.AddFormElement("userId", GetUserId())
@@ -545,7 +545,7 @@ Public Class Rating
 
         Mes("Sending rating request to server...")
 
-        Dim retVal As String = GetHttpResponseString(SERVER & "rate.php?characterId=" & charNfo.CharacterId & "&userId=" & GetUserId() & "&rating=" & rating & "&rate")
+        Dim retVal As String = GetHttpResponseString(AG3DBC.API.ServerUrl & "rate.php?characterId=" & charNfo.CharacterId & "&userId=" & GetUserId() & "&rating=" & rating & "&rate")
         Dim ok As Boolean = True
 
         Select Case retVal

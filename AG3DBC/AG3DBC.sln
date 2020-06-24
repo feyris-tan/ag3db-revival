@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AG3DBC", "AG3DBC.vbproj", "{F5B9DA3A-0DA2-44A0-9957-9A6F3D47210D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libAG3DBCrevival", "..\libAG3DBCrevival\libAG3DBCrevival.csproj", "{7E1109B8-C6BF-4EDC-8E9E-B1C446C1A216}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F5B9DA3A-0DA2-44A0-9957-9A6F3D47210D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5B9DA3A-0DA2-44A0-9957-9A6F3D47210D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5B9DA3A-0DA2-44A0-9957-9A6F3D47210D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E1109B8-C6BF-4EDC-8E9E-B1C446C1A216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E1109B8-C6BF-4EDC-8E9E-B1C446C1A216}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E1109B8-C6BF-4EDC-8E9E-B1C446C1A216}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E1109B8-C6BF-4EDC-8E9E-B1C446C1A216}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

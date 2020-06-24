@@ -6,3 +6,5 @@
 /AG3DBC/*.suo
 /AG3DBC/.vs
 /AG3DBC/packages/ICSharpCode.SharpZipLib.dll.0.85.4.369
+/libAG3DBCrevival/bin/Debug
+/libAG3DBCrevival/obj/Debug

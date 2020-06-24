@@ -416,7 +416,7 @@ Public Class Feeds
 
     Public Function GetFeed(ByVal feed As AG3DBCThreadType) As String()
 
-        Dim request As New WebFormPost(SERVER & "ag3dbc\feeds.php")
+        Dim request As New WebFormPost(AG3DBC.API.ServerUrl & "ag3dbc\feeds.php")
 
         request.AddFormElement("userId", GetUserId())
         request.AddFormElement("username", GetUsername())

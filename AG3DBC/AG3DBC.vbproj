@@ -192,6 +192,12 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libAG3DBCrevival\libAG3DBCrevival.csproj">
+      <Project>{7e1109b8-c6bf-4edc-8e9e-b1c446c1a216}</Project>
+      <Name>libAG3DBCrevival</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
