@@ -1,0 +1,107 @@
+[center][img]http://www.hongfire.com/forum/images/icons/icon4.gif[/img]  [b] [size=+2][color=green]Artificial Girl 3 Database Client[/size] [img]http://www.hongfire.com/forum/images/icons/icon4.gif[/img]
+[i]Current version: v1.01 fix3[/i][/b][/color]
+
+
+This program will let you share your Artificial Girl 3 characters with other users also using the database! You can download and rate other characters as well as add custom tags to your own! There's also statistics such as top users, top characters and your ratings!
+
+Here are some screen shots of the program:[spoiler]
+[img]http://stuff.sosavalanche.net/ag3dbc/ag3dbc27.jpg[/img]
+[img]http://stuff.sosavalanche.net/ag3dbc/ag3dbc26.jpg[/img]
+[img]http://stuff.sosavalanche.net/ag3dbc/ag3dbc22.jpg[/img]
+[img]http://stuff.sosavalanche.net/ag3dbc/ag3dbc28.jpg[/img]
+[img]http://stuff.sosavalanche.net/ag3dbc/ag3dbc23.jpg[/img]
+[img]http://stuff.sosavalanche.net/ag3dbc/ag3dbc24.jpg[/img]
+[img]http://stuff.sosavalanche.net/ag3dbc/ag3dbc25.jpg[/img][/spoiler]Before you can use the program you'll need to create an account and [B]AGREE TO THE TERMS OF USE![/B]
+
+[url="http://ag3.illusionist.sosavalanche.net/register.php"][b]Click here to register an account![/b][/url]
+[url="http://stuff.sosavalanche.net/ag3dbc/AG3DBC_v1.01_fix3.exe"][b]Click here to download the client program![/b][/url]
+
+Thanks to all who BETA tested:
+[b]Hentaijin[/b], [b]mjanes42[/b], [b]darkhound[/b], [b]ToxicKing[/b], [b]TheShadow[/b], [b]SFOHollanderMGO[/b]
+
+and thank [b]you[/b] for downloading! :D
+
+[u][b][i]Change log:[/i][/u][/b][spoiler]
+[list]
+    [*][b]2007-12-2?, v1.02:[/b][list]
+		[*][color=purple][b][i]Changed[/i][/b] 'Your Statistics' tab to 'Your Characters' and 'Your Ratings' tabs[/color]
+        [*][color=purple][b][i]Changed[/i][/b] 'Local Characters' interface[/color]
+		[*][color=blue][b][i]Added[/i][/b] list searching engine[/color]
+		[*][color=blue][b][i]Added[/i][/b] character details feature[/color]
+		[*][color=blue][b][i]Added[/i][/b] character description[/color]
+		[*][color=blue][b][i]Added[/i][/b] 'Have Previews' column to 'AG3DB Characters' list[/color]
+		[*][color=blue][b][i]Added[/i][/b] 'Have Rated' column to 'AG3DB Characters' list[/color]
+        [*][color=green][b][i]Fixed[/i][/b] list items not getting updated properly[/color]
+    [/list]
+    [*][b]2007-12-06, v1.01:[/b][list]
+        [*][color=purple][b][i]Changed[/i][/b] options group to a tab control[/color]
+        [*][color=purple][b][i]Changed[/i][/b] lists interface around[/color]
+        [*][color=blue][b][i]Added[/i][/b] 'AG3DB Characters' list colors options[/color]
+        [*][color=blue][b][i]Added[/i][/b] detailed error logging[/color]
+        [*][color=blue][b][i]Added[/i][/b] more options to show character in local list after download[/color]
+        [*][color=blue][b][i]Added[/i][/b] 'Have Locally' field in AG3DB Characters list[/color]
+        [*][color=blue][b][i]Added[/i][/b] 'Help' tab[/color]
+		[*][color=blue][b][i]Added[/i][/b] 'Default Tab' option to the 'Misc.' options tab[/color]
+        [*][color=green][b][i]Fixed[/i][/b] 'Top Characters' preview problem[/color]
+        [*][color=green][b][i]Fixed[/i][/b] 'Rename and 'Remove' local characters problems[/color]
+        [*][color=green][b][i]Fixed[/i][/b] 'AG3DB Characters' tag search list items not being updated[/color]
+		[*][color=green][b][i]Fixed[/i][/b] after character download bugs[/color]
+        [*][color=green][b][i]Fixed[/i][/b] other miscellaneous problems[/color]
+    [/list]
+    [*][b]2007-12-03, v1.00:[/b][list]
+        [*]Initial release
+    [/list][/spoiler]
+[/list]
+
+[*][color=blue][b][i]Added[/i][/b] [/color]
+[*][color=purple][b][i]Changed[/i][/b] [/color]
+[*][color=green][b][i]Fixed[/i][/b] [/color]
+[*][color=red][b][i]Removed[/i][/b] [/color]
+
+
+-------------------------------
+
+wurlox ; darkhound ; TheShadow ; Alamar ; kuropon ;
+Inquisitor ; SFOHollandMGO ; mjanes42 ; Migueru ; ToxicKing ;
+Artificial Girl 3 Database Client BETA
+----------
+hi!
+
+my Artificial Girl 3 Database Client is ready for BETA testing! i'm only sending out a select number of copies and i've selected you guys to test it out and tell me what you think!
+
+before i can send you the program i'll need some information:
+
+[list=1]
+[*]a password for your login (your username will be your HongFire username)
+[*]your email address (for database updates and character upload notifications)[/list]
+please send this information via a HongFire PM! if you do not reply i'll assume you're not interested in BETA testing the program.
+
+thanks!
+----------
+
+----------
+thank you for your interest in my Artificial Girl 3 Database Client! :)
+
+here's the link to the program: [url]http://stuff.sosavalanche.net/AG3DBC_BETA.exe[/url]
+(you must agree to the terms of use before installing)
+
+here is your login information:
+Username: [b]username[/b]
+Password: [b]pwd[/b]
+
+please report any problems and errors you may encounter!
+
+also i'd like some feed back from you so i've written some questions i'd like you to look at:
+
+[list=1]
+[*]Would you like to see lots of database statistics like top rated characters and users, etc.
+[*]Would you use a character commenting system?
+[*]Considering that i will be implementing a character tagging system where you can add custom tags to your characters and search tags of other characters in the datase, do you think a searching system based on character's properties like hair, body, face, etc is truly neccessary?
+[*]Do you think adding custom previews is neccessary?
+[*]If you made changes to one of your already existing characters, would you rather upload it as a new character or update it in the database?
+[*]Would you care if the program's window size increased?
+[*]Do you have any other improvements and/or suggestions?
+[/list]
+please feel free to answer as many or as little questions as you like!
+
+thanks again! :)

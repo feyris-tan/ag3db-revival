@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="AG3DBC">
+</Property><Property Name="Solution File" Value="G:\VB PROJECTS\AG3DBC\AG3DBC.sln">
+</Property><Property Name="User Options File" Value="G:\VB PROJECTS\AG3DBC\AG3DBC.suo">
+</Property><Property Name="Date" Value="Thursday, August 28, 2008">
+</Property><Property Name="Time" Value="14:48 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="AG3DBC.sln" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\AG3DBC.sln">
+</Event><Event ErrorLevel="0" Project="" Source="AG3DBC.suo" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\AG3DBC.suo">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="AG3DBC.vbproj" Description="Project file successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\AG3DBC.vbproj">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="AG3DBC.vbproj.user" Description="Project user file successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\AG3DBC.vbproj.user">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="AG3DBC.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\AG3DBC.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="..\Standard Functions.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\..\Standard Functions.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="..\FtpClient.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\..\FtpClient.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="Classes.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\Classes.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="Feeds.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\Feeds.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="Form1.Designer.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\Form1.Designer.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="Form1.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\Form1.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="FrmEditDetails.Designer.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\FrmEditDetails.Designer.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="FrmEditDetails.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\FrmEditDetails.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="My Project\AssemblyInfo.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\My Project\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="My Project\Application.Designer.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\My Project\Application.Designer.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="My Project\Resources.Designer.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\My Project\Resources.Designer.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="My Project\Settings.Designer.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\My Project\Settings.Designer.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="Nfos.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\Nfos.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="ListPages.Designer.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\ListPages.Designer.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="ListPages.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\ListPages.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="Search.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\Search.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="SettarsGettars.vb" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\SettarsGettars.vb">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="My Project\Application.myapp" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\My Project\Application.myapp">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="My Project\Settings.settings" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\My Project\Settings.settings">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="banners\banner1.jpg" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\banners\banner1.jpg">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="banners\banner2.jpg" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\banners\banner2.jpg">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="banners\banner2-1.jpg" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\banners\banner2-1.jpg">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="banners\banner3.png" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\banners\banner3.png">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="banners\Clipboard02.ico" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\banners\Clipboard02.ico">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="Form1.resx" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="FrmEditDetails.resx" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\FrmEditDetails.resx">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="My Project\Resources.resx" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\My Project\Resources.resx">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="ListPages.resx" Description="File successfully backed up as G:\VB PROJECTS\AG3DBC\Backup\ListPages.resx">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="AG3DBC.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="AG3DBC" Source="AG3DBC.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="AG3DBC.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="AG3DBC.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="AG3DBC" Source="AG3DBC.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

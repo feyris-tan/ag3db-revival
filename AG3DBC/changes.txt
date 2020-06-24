@@ -1,0 +1,13 @@
+Updated Interface
+	- Increased size of program window
+	- Only 1 picture preview object
+	- Remove 'Options' tab
+	- Remove 'Login/Logout' tab
+	- Changed layout of lists
+Updated Statistics tab
+	- Added 'Your Statistics' tab
+	- Added 'Top Characters' tab
+	- Added 'Top Users' tab
+Auto get previews
+1 log file per day
+Other internal fixes and updates
