@@ -3,6 +3,7 @@ package moe.yo3explorer.ag3dbRebuild.business.control;
 import moe.yo3explorer.ag3dbRebuild.business.entity.DbCharacter;
 import moe.yo3explorer.ag3dbRebuild.business.entity.ExtractedRating;
 import org.apache.commons.math3.distribution.ExponentialDistribution;
+import org.apache.commons.math3.distribution.PoissonDistribution;
 
 import java.util.Collections;
 import java.util.LinkedList;
@@ -18,23 +19,20 @@ public class RatingGuesser
 
         double target = round(character.rating);
         double current = Double.NaN;
-        double edMean = round(character.rating / 10d);
 
         if (target == 0)
             return Collections.emptyList();
 
         LinkedList<ExtractedRating> ratings = new LinkedList<>();
-        ExponentialDistribution exponentialDistribution = new ExponentialDistribution(edMean,1e-5);
+        PoissonDistribution poissonDistribution = new PoissonDistribution(target,6.0f);
 
         do {
             if (ratings.size() > maxRatings) {
                 ratings.clear();
                 slips++;
             }
-            double sample = exponentialDistribution.sample();
-            sample *= 10d;
-            sample = round(sample);
-            int tba = (int)sample;
+            int sample = poissonDistribution.sample();
+            int tba = sample;
             tba = clamp(tba,1,5);
             ratings.add(ExtractedRating.createGuess(character,tba));
             current = ratings.stream().mapToDouble(x -> (double)x.ratingValue).average().getAsDouble();
