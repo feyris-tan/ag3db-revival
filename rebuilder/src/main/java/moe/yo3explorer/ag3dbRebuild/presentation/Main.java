@@ -48,6 +48,11 @@ public class Main
             List<ExtractedCharacter> extractedCharacters = foundUser.extractCharacters();
             if (extractedCharacters.size() == 0)
                 continue;
+
+            for (ExtractedCharacter extractedCharacter : extractedCharacters) {
+
+            }
+
         }
     }
 }

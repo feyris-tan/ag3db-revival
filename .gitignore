@@ -12,3 +12,4 @@
 /rebuilder/*.iml
 /rebuilder/src/main/resources/sql.properties
 /rebuilder/target/classes
+/rebuilder/target/test-classes/moe/yo3explorer/ag3dbRebuild/business/control/*.class
