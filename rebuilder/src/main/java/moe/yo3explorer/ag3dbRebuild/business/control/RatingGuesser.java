@@ -4,6 +4,7 @@ import moe.yo3explorer.ag3dbRebuild.business.entity.DbCharacter;
 import moe.yo3explorer.ag3dbRebuild.business.entity.ExtractedRating;
 import org.apache.commons.math3.distribution.ExponentialDistribution;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -13,11 +14,14 @@ public class RatingGuesser
     public List<ExtractedRating> generateRatings(DbCharacter character)
     {
         slips = 0;
-        int maxRatings = Math.max(300,character.hits);
+        int maxRatings = Math.max(30,character.hits);
 
         double target = round(character.rating);
         double current = Double.NaN;
         double edMean = round(character.rating / 10d);
+
+        if (target == 0)
+            return Collections.emptyList();
 
         LinkedList<ExtractedRating> ratings = new LinkedList<>();
         ExponentialDistribution exponentialDistribution = new ExponentialDistribution(edMean,1e-5);

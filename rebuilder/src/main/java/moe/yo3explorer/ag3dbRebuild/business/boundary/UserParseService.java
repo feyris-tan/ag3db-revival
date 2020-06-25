@@ -115,6 +115,8 @@ public class UserParseService
         byte[] crc32Bytes = crc32.finish();
         flip(crc32Bytes);
         String result = bytesToHex(crc32Bytes);
+        while (result.startsWith("0"))
+            result = result.substring(1);       //The dump says so, for some reason...
         return result;
     }
 
@@ -141,4 +143,7 @@ public class UserParseService
         return new String(hexChars);
     }
 
+    public String getUsername() {
+        return username;
+    }
 }

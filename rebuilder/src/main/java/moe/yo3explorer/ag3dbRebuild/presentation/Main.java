@@ -1,6 +1,10 @@
 package moe.yo3explorer.ag3dbRebuild.presentation;
 
+import moe.yo3explorer.ag3dbRebuild.business.boundary.Ag3DbOrm;
 import moe.yo3explorer.ag3dbRebuild.business.boundary.UserParseService;
+import moe.yo3explorer.ag3dbRebuild.business.control.RatingGuesser;
+import moe.yo3explorer.ag3dbRebuild.business.entity.DbCharacter;
+import moe.yo3explorer.ag3dbRebuild.business.entity.DbUser;
 import moe.yo3explorer.ag3dbRebuild.business.entity.ExtractedCharacter;
 import org.apache.commons.compress.archivers.tar.TarArchiveEntry;
 import org.apache.commons.compress.archivers.tar.TarArchiveInputStream;
@@ -9,11 +13,12 @@ import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.*;
+import java.sql.SQLException;
 import java.util.List;
 
 public class Main
 {
-    public static void main(String @NotNull [] args) throws IOException {
+    public static void main(String @NotNull [] args) throws IOException, SQLException {
         Logger logger = LogManager.getLogger(Main.class);
         if (args.length == 0)
         {
@@ -28,6 +33,8 @@ public class Main
             return;
         }
 
+        Ag3DbOrm orm = null;
+        RatingGuesser ratingGuesser = null;
         FileInputStream level1 = new FileInputStream(infile);
         TarArchiveInputStream level2 = new TarArchiveInputStream(level1);
         TarArchiveEntry tarEntry = null;
@@ -50,7 +57,25 @@ public class Main
                 continue;
 
             for (ExtractedCharacter extractedCharacter : extractedCharacters) {
+                if (orm == null)
+                    orm = new Ag3DbOrm();
 
+                DbCharacter dbCharacterByCrc32 = orm.findDbCharacterByCrc32(extractedCharacter.crc32);
+                if (dbCharacterByCrc32 == null)
+                {
+                    logger.warn(String.format("CRC32 %s found in %s, but not in SQL dump.",extractedCharacter.crc32,tarEntry.getName()));
+                    continue;
+                }
+                boolean alreadyInserted = orm.testForCharacterData(dbCharacterByCrc32.id);
+                if (alreadyInserted)
+                    continue;
+
+                DbUser dbUser = orm.autoGetDbUser(dbCharacterByCrc32, foundUser);
+                if (ratingGuesser == null)
+                    ratingGuesser = new RatingGuesser();
+                extractedCharacter.ratings = ratingGuesser.generateRatings(dbCharacterByCrc32);
+
+                orm.postCharacter(extractedCharacter,dbCharacterByCrc32.id);
             }
 
         }
