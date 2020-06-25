@@ -8,3 +8,7 @@
 /AG3DBC/packages/ICSharpCode.SharpZipLib.dll.0.85.4.369
 /libAG3DBCrevival/bin/Debug
 /libAG3DBCrevival/obj/Debug
+/rebuilder/.idea
+/rebuilder/*.iml
+/rebuilder/src/main/resources/sql.properties
+/rebuilder/target/classes
