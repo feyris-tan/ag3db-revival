@@ -250,8 +250,8 @@ public class Ag3DbOrm implements Closeable
         if (stmt10 == null)
             stmt10 = connection.prepareStatement("UPDATE characters SET user_id = ? WHERE id = ?");
 
-        stmt10.setInt(1,dbCharacter.id);
-        stmt10.setInt(2,newUserId);
+        stmt10.setInt(2,dbCharacter.id);
+        stmt10.setInt(1,newUserId);
         int i = stmt10.executeUpdate();
         if (i != 1)
             throw new RuntimeException("what?");

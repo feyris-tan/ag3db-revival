@@ -2,8 +2,6 @@ package moe.yo3explorer.ag3dbRebuild.business.control;
 
 import moe.yo3explorer.ag3dbRebuild.business.entity.DbCharacter;
 import moe.yo3explorer.ag3dbRebuild.business.entity.ExtractedRating;
-import org.apache.commons.math3.distribution.ExponentialDistribution;
-import org.apache.commons.math3.distribution.PoissonDistribution;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.Contract;
@@ -15,6 +13,7 @@ import java.util.stream.Collectors;
 public class RatingGuesser
 {
     private static Logger logger;
+    private int highestSearchDepth;
 
     public RatingGuesser()
     {
@@ -29,15 +28,13 @@ public class RatingGuesser
     {
         double target = round(character.rating);
         if (Double.isNaN(target))
-        {
             target = character.rating;
-        }
 
         if (target == 0)
             return Collections.emptyList();
 
         int[] ratings = search(character.rating);
-        List<ExtractedRating> collect = Arrays.stream(ratings).mapToObj(x -> ExtractedRating.createGuess(character, x)).collect(Collectors.toList());
+        List<ExtractedRating> collect = Arrays.stream(ratings).mapToObj(x -> ExtractedRating.createGuess(character, (int)x)).collect(Collectors.toList());
         return collect;
     }
 
@@ -47,26 +44,30 @@ public class RatingGuesser
     }
 
     private int[] searchState;
-    private HashMap<Double,int[]> searchCache;
-
     private int[] search(double target)
     {
-        if (searchCache == null)
-            searchCache = new HashMap<>();
-        if (searchCache.containsKey(target))
-            return searchCache.get(target);
-
-        double searchStateAvg = Double.NaN;
-        logger.info(String.format("Searching for %f",target));
+        double[] ring = new double[] {Double.NaN, Double.NaN};
+        searchState = new int[] {1};
+        double searchStateAvg = 1;
+        if (target == 1.0)
+            return searchState;
         while (searchStateAvg != target)
         {
-            incrementSearchState(0);
+            if (searchStateAvg > target)
+                decreaseState();
+            else if (searchStateAvg < target)
+                increaseState();
             searchStateAvg = fastAverage(searchState);
-            searchStateAvg = round(searchStateAvg);
-            if (!searchCache.containsKey(searchStateAvg)) {
-                int[] newChain = Arrays.copyOf(searchState, searchState.length);
-                logger.info(String.format("Found chain for %.5f: (%s)",searchStateAvg,String.join("->", Arrays.stream(newChain).mapToObj(x -> Integer.toString(x)).collect(Collectors.toList()))));
-                searchCache.put(searchStateAvg, newChain);
+            if (searchStateAvg == ring[0])
+            {
+                ring[0] = ring[1] = Double.NaN;
+                increaseSearchRoom();
+                searchState[searchState.length - 1] = 1;
+                searchStateAvg = fastAverage(searchState);
+            }
+            else {
+                ring[0] = ring[1];
+                ring[1] = searchStateAvg;
             }
         }
         return searchState;
@@ -81,30 +82,41 @@ public class RatingGuesser
             d += values[i];
         }
         d /= values.length;
+        d = round(d);
         return d;
     }
 
-    private void incrementSearchState(int offset)
-    {
-        if (searchState == null)
+    private void increaseSearchRoom() {
+        int[] increasedRoom = Arrays.copyOf(searchState,searchState.length + 1);
+        searchState = increasedRoom;
+        if (highestSearchDepth < increasedRoom.length)
         {
-            searchState = new int[]{1};
-            return;
+            logger.info(String.format("Increased search room to %d",increasedRoom.length));
+            highestSearchDepth = increasedRoom.length;
         }
-        if (searchState.length < offset + 1)
-        {
-            int[] increasedRoom = Arrays.copyOf(searchState,offset + 1);
-            increasedRoom[offset] = 1;
-            searchState = increasedRoom;
-            logger.info(String.format("Increased search space to %d!",offset));
-            return;
-        }
+    }
 
-        searchState[offset]++;
-        if (searchState[offset] == 6)
+    private void increaseState()
+    {
+        for (int i = 0; i < searchState.length; i++)
         {
-            searchState[offset] = 1;
-            incrementSearchState(offset + 1);
+            if (searchState[i] != 5) {
+                searchState[i]++;
+                return;
+            }
         }
+        throw new RuntimeException("failed to increase search state!");
+    }
+
+    private void decreaseState()
+    {
+        for (int i = 0; i < searchState.length; i++)
+        {
+            if (searchState[i] != 1) {
+                searchState[i]--;
+                return;
+            }
+        }
+        throw new RuntimeException("failed to decrease search state!");
     }
 }
